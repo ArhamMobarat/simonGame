@@ -8,7 +8,9 @@ var buttonColors = ["red", "green", "blue", "yellow"];
 $(document).keydown(function(){
     if(!started){
         $("#level-title").text("Level "+ level);
-        nextSequence();
+        setTimeout(function(){
+            nextSequence();
+        },1000);
         started = true;
     }
 });
