@@ -25,9 +25,10 @@ $(".mobileButton").click(function(){
         $(".mobileButton").css("display", "none");
         $("#level-title").css("display","block");
         $("#level-title").text("Level "+ level);
-        nextSequence();
+        setTimeout(function(){
+            nextSequence();
+        },1000);
         started = true;
-        
     }
 });
 
